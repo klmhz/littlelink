@@ -638,8 +638,9 @@
 
 
 /* TheOutEdit Theme Overrides
-   Keep LittleLink structure, only update page, text, default buttons, and Messenger.
+   Keep LittleLink structure, only update page, text, default buttons.
    Facebook / Instagram / Threads / TikTok keep original LittleLink brand colors.
+   Messenger uses the same style as Email.
 */
 
 /* Theme color variables */
@@ -665,17 +666,6 @@
   --toe-button-primary-border: #17341C;
   --toe-button-primary-hover-bg: #0F2614;
   --toe-button-primary-hover-border: #0F2614;
-
-  --toe-button-secondary-text: #17341C;
-  --toe-button-secondary-bg: #FFFFFF;
-  --toe-button-secondary-border: #17341C;
-
-  --toe-social-icon: #17341C;
-  --toe-social-bg: #FFFFFF;
-  --toe-social-border: #E3E7DD;
-  --toe-social-hover-icon: #FFFFFF;
-  --toe-social-hover-bg: #17341C;
-  --toe-social-hover-border: #17341C;
 }
 
 /* Page background */
@@ -716,34 +706,20 @@ footer a:focus {
 }
 
 /* Default buttons:
-   Official Website / Shop Men / Shop Women / Email Us
+   Official Website / Shop Men / Shop Women / Email Us / Messenger
 */
-.button-default {
+.button-default,
+.button-messenger {
   color: var(--toe-button-primary-text);
   background-color: var(--toe-button-primary-bg);
   border-color: var(--toe-button-primary-border);
 }
 
 .button-default:hover,
-.button-default:focus {
+.button-default:focus,
+.button-messenger:hover,
+.button-messenger:focus {
   color: var(--toe-button-primary-text);
   background-color: var(--toe-button-primary-hover-bg);
   border-color: var(--toe-button-primary-hover-border);
-}
-
-/* Messenger only:
-   Facebook / Instagram / Threads / TikTok are intentionally not included here,
-   so they keep their original LittleLink brand colors.
-*/
-.button-messenger {
-  color: var(--toe-social-icon);
-  background-color: var(--toe-social-bg);
-  border-color: var(--toe-social-border);
-}
-
-.button-messenger:hover,
-.button-messenger:focus {
-  color: var(--toe-social-hover-icon);
-  background-color: var(--toe-social-hover-bg);
-  border-color: var(--toe-social-hover-border);
 }
