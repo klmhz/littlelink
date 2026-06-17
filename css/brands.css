@@ -631,3 +631,130 @@
 	--button-background:#0B5CFF;
   --button-border:1px solid #FFFFFF;
 }
+/* TheOutEdit Theme Overrides
+   Keep LittleLink structure, only update colors
+*/
+
+/* Theme color variables */
+:root,
+.theme-light {
+  --toe-text-primary: #2F332D;
+  --toe-text-secondary: #5F665D;
+  --toe-text-tertiary: #8A9186;
+  --toe-title: #17341C;
+  --toe-accent: #D95F2B;
+  --toe-link: #17341C;
+
+  --toe-page-bg: #FAFAF6;
+  --toe-secondary-bg: #EEF1E8;
+  --toe-popup-bg: #FFFFFF;
+
+  --toe-border-primary: #E3E7DD;
+  --toe-border-secondary: #D6DCCF;
+  --toe-border-tertiary: #EEF1E8;
+
+  --toe-button-primary-text: #FFFFFF;
+  --toe-button-primary-bg: #17341C;
+  --toe-button-primary-border: #17341C;
+  --toe-button-primary-hover-bg: #0F2614;
+  --toe-button-primary-hover-border: #0F2614;
+
+  --toe-button-secondary-text: #17341C;
+  --toe-button-secondary-bg: #FFFFFF;
+  --toe-button-secondary-border: #17341C;
+
+  --toe-social-icon: #17341C;
+  --toe-social-bg: #FFFFFF;
+  --toe-social-border: #E3E7DD;
+  --toe-social-hover-icon: #FFFFFF;
+  --toe-social-hover-bg: #17341C;
+  --toe-social-hover-border: #17341C;
+}
+
+/* Page background */
+body {
+  background-color: var(--toe-page-bg);
+  color: var(--toe-text-primary);
+}
+
+/* Container text */
+.container,
+.column {
+  color: var(--toe-text-primary);
+}
+
+/* Brand title */
+h1,
+h1 div {
+  color: var(--toe-title);
+}
+
+/* Brand subtitle */
+p {
+  color: var(--toe-text-secondary);
+}
+
+/* Footer */
+footer {
+  color: var(--toe-text-tertiary);
+}
+
+footer a {
+  color: var(--toe-link);
+}
+
+footer a:hover,
+footer a:focus {
+  color: var(--toe-accent);
+}
+
+/* Primary / default buttons */
+.button-default {
+  color: var(--toe-button-primary-text);
+  background-color: var(--toe-button-primary-bg);
+  border-color: var(--toe-button-primary-border);
+}
+
+.button-default:hover,
+.button-default:focus {
+  color: var(--toe-button-primary-text);
+  background-color: var(--toe-button-primary-hover-bg);
+  border-color: var(--toe-button-primary-hover-border);
+}
+
+/* Social buttons: Facebook / Instagram / Threads / TikTok / Messenger */
+.button-faceb,
+.button-instagram,
+.button-threads,
+.button-tiktok,
+.button-messenger {
+  color: var(--toe-social-icon);
+  background-color: var(--toe-social-bg);
+  border-color: var(--toe-social-border);
+}
+
+.button-faceb:hover,
+.button-faceb:focus,
+.button-instagram:hover,
+.button-instagram:focus,
+.button-threads:hover,
+.button-threads:focus,
+.button-tiktok:hover,
+.button-tiktok:focus,
+.button-messenger:hover,
+.button-messenger:focus {
+  color: var(--toe-social-hover-icon);
+  background-color: var(--toe-social-hover-bg);
+  border-color: var(--toe-social-hover-border);
+}
+
+/* Button icons */
+.button .icon {
+  filter: none;
+}
+
+/* Optional: if SVG icons inherit currentColor */
+.button svg,
+.button svg path {
+  fill: currentColor;
+}
