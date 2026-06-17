@@ -631,8 +631,15 @@
 	--button-background:#0B5CFF;
   --button-border:1px solid #FFFFFF;
 }
+
+
+
+
+
+
 /* TheOutEdit Theme Overrides
-   Keep LittleLink structure, only update colors
+   Keep LittleLink structure, only update page, text, default buttons, and Messenger.
+   Facebook / Instagram / Threads / TikTok keep original LittleLink brand colors.
 */
 
 /* Theme color variables */
@@ -677,7 +684,7 @@ body {
   color: var(--toe-text-primary);
 }
 
-/* Container text */
+/* Main layout text */
 .container,
 .column {
   color: var(--toe-text-primary);
@@ -708,7 +715,9 @@ footer a:focus {
   color: var(--toe-accent);
 }
 
-/* Primary / default buttons */
+/* Default buttons:
+   Official Website / Shop Men / Shop Women / Email Us
+*/
 .button-default {
   color: var(--toe-button-primary-text);
   background-color: var(--toe-button-primary-bg);
@@ -722,39 +731,19 @@ footer a:focus {
   border-color: var(--toe-button-primary-hover-border);
 }
 
-/* Social buttons: Facebook / Instagram / Threads / TikTok / Messenger */
-.button-faceb,
-.button-instagram,
-.button-threads,
-.button-tiktok,
+/* Messenger only:
+   Facebook / Instagram / Threads / TikTok are intentionally not included here,
+   so they keep their original LittleLink brand colors.
+*/
 .button-messenger {
   color: var(--toe-social-icon);
   background-color: var(--toe-social-bg);
   border-color: var(--toe-social-border);
 }
 
-.button-faceb:hover,
-.button-faceb:focus,
-.button-instagram:hover,
-.button-instagram:focus,
-.button-threads:hover,
-.button-threads:focus,
-.button-tiktok:hover,
-.button-tiktok:focus,
 .button-messenger:hover,
 .button-messenger:focus {
   color: var(--toe-social-hover-icon);
   background-color: var(--toe-social-hover-bg);
   border-color: var(--toe-social-hover-border);
-}
-
-/* Button icons */
-.button .icon {
-  filter: none;
-}
-
-/* Optional: if SVG icons inherit currentColor */
-.button svg,
-.button svg path {
-  fill: currentColor;
 }
